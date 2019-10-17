@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { withFormik, Form, Field } from 'formik';
+import * as Yup from "yup";
 
 // Name
 // Email
@@ -11,7 +12,11 @@ function UserForm({ values }) {
     // const [user, setUser] = useState('');
     return (
         <Form>
-            <Field type="text" name="name" placeholder="name" />
+            <Field type="text" name="name" placeholder="Enter Name" />
+            <Field type="email" name="email" placeholder="Enter Email" />
+            <Field type="password" name="password" placeholder="Enter Password" />
+            <Field  type="checkbox" name="terms" /> <label htmlFor="terms">Terms of Service</label>
+            <button type="submit">Submit</button>
         </Form>
     )
 }
@@ -20,4 +25,4 @@ const FormikUserForm = withFormik({
 
 })(UserForm);
 
-export default UserForm;
+export default FormikUserForm;
