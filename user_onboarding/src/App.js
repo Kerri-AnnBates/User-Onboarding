@@ -5,8 +5,11 @@ import UserForm from './components/Form';
 
 function App() {
   return (
-    <div className='container'>
-      <UserForm />
+    <div>
+      <div className='container'>
+        <h1>User Info</h1>
+        <UserForm />
+      </div>
     </div>
   );
 }

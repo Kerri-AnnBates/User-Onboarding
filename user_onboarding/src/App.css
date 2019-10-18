@@ -1,22 +1,56 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #E6E6FA;
+}
+
+h1 {
   text-align: center;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-link {
-  color: #09d3ac;
+form {
+  width: 500px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+input[type='checkbox'] {
+  width: auto;
+}
+
+button {
+  display: block;
+  padding: 10px 50px;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  margin-top: 15px;
+}
+
+.error {
+  color: crimson;
+  font-size: 14px;
+  margin: 0;
+}
+
+ul {
+  margin-top: 20px;
 }

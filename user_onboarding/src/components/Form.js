@@ -18,7 +18,7 @@ function UserForm({ values, errors, touched, status }) {
                 <Field type="email" name="email" placeholder="Enter Email" />
                 {touched.email && errors.email && <p className="error">{errors.email}</p>}
                 <Field type="password" name="password" placeholder="Enter Password" />
-                {touched.name && errors.name && <p className="error">{errors.password}</p>}
+                {touched.password && errors.password && <p className="error">{errors.password}</p>}
                 <label htmlFor="terms"><Field  type="checkbox" name="terms" checked={values.terms} id="terms" /> Terms of Service</label>
                 <button type="submit">Submit</button>
             </Form>
